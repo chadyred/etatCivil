@@ -1,0 +1,50 @@
+Deces:
+  Acte1_Deces:
+    numeroActe :                     1
+    numeroOrdre:                     1
+    dateActe :                       '2011-03-21'
+    heureActe :                      '22:35'
+    typeActe:                        décès
+    nomDefunt:                       Donec
+    prenomDefunt:                    porttitor
+    dateDeces:                       '2011-03-01'
+    heureDeces:                      '14:00:00'
+    dateApproximative:               0
+    lieuDeces:                       Vestibulum pharetra dictum ligula, quis malesuada felis interdum non. Morbi turpis ligula, elementum ut pulvinar et, rutrum nec erat.
+    professionDefunt:                Curabitur eros ante
+    domicileDefunt:                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse id odio libero
+    dateNaissanceDefunt:             '1920-01-01'
+    lieuNaissanceDefunt:             Vestibulum pharetra dictum ligula
+    nomPrenomPereDefunt:             Integer non dolor
+    nomPrenomMereDefunt:             Integer sit amet
+    statutMatrimoniale:              marié(e)
+    nomDeclarant:                    Nam
+    prenomDeclarant:                 aliquam
+    ageDeclarant:                    23
+    professionDeclarant:             hendrerit eu.
+    adresseDeclarant:                Curabitur quis ligula sem. Curabitur eros ante
+
+  Acte2_Deces:
+    numeroActe :                     1
+    numeroOrdre:                     2
+    dateActe :                       '2011-03-21'
+    heureActe :                      '10:56'
+    typeActe:                        transcription
+    nomDefunt:                       Jean
+    prenomDefunt:                    Paul
+    dateDeces:                       '2000-01-04'
+    heureDeces:                      '16:25:00'
+    dateApproximative:               1
+    lieuDeces:                       Vestibulum pharetra dictum ligula, quis malesuada felis interdum non. Morbi turpis ligula, elementum ut pulvinar et, rutrum nec erat.
+    professionDefunt:                Curabitur eros ante
+    domicileDefunt:                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse id odio libero
+    dateNaissanceDefunt:             '1952-01-01'
+    lieuNaissanceDefunt:             Vestibulum pharetra dictum ligula
+    nomPrenomPereDefunt:             Integer non dolor
+    nomPrenomMereDefunt:             Integer sit amet
+    statutMatrimoniale:              marié(e)
+    nomDeclarant:                    dupont
+    prenomDeclarant:                 marie
+    ageDeclarant:                    45
+    professionDeclarant:             hendrerit eu.
+    adresseDeclarant:                Curabitur quis ligula sem. Curabitur eros ante

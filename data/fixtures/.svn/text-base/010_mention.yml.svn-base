@@ -1,0 +1,21 @@
+Mention_marginaleNaissance:
+  mentionNaissance_Acte2:
+    naissance_id: 1
+    mention: NAISSANCE Integer non dolor nibh. Duis lacus risus, adipiscing ut blandit at, convallis non erat. Donec rhoncus purus vel leo pulvinar imperdiet. In non ante ac nisl consectetur condimentum. Vestibulum sed nisl nec urna aliquam faucibus ut a tortor. Integer ac arcu erat. Duis dapibus neque quis sapien tincidunt accumsan. Cras non ante sapien, id convallis nunc. Praesent tempor turpis ac ligula vulputate pharetra. Aliquam erat nunc, tempor sed tincidunt vel, tincidunt ac massa. Curabitur dolor augue, ultrices quis fermentum eu, aliquam sed sapien. Suspendisse auctor ullamcorper leo sit amet lobortis. Aenean accumsan risus et tortor accumsan feugiat. Praesent et sagittis risus. Vivamus aliquet libero et urna semper sed condimentum sapien pretium. Aenean sit amet lorem tortor, sed laoreet dolor. Pellentesque blandit molestie pharetra. Nam tristique, odio ut mollis pulvinar, leo libero vehicula massa, in porta dui nibh cursus lorem. Duis adipiscing blandit vehicula.
+    dateAjout: '2011-03-02'
+  
+Mention_marginaleDeces:
+  mentionDeces_Acte2:
+    deces_id: 1
+    mention: DECES Integer non dolor nibh. Duis lacus risus, adipiscing ut blandit at, convallis non erat. Donec rhoncus purus vel leo pulvinar imperdiet. In non ante ac nisl consectetur condimentum. Vestibulum sed nisl nec urna aliquam faucibus ut a tortor. Integer ac arcu erat. Duis dapibus neque quis sapien tincidunt accumsan. Cras non ante sapien, id convallis nunc. Praesent tempor turpis ac ligula vulputate pharetra. Aliquam erat nunc, tempor sed tincidunt vel, tincidunt ac massa. Curabitur dolor augue, ultrices quis fermentum eu, aliquam sed sapien. Suspendisse auctor ullamcorper leo sit amet lobortis. Aenean accumsan risus et tortor accumsan feugiat. Praesent et sagittis risus. Vivamus aliquet libero et urna semper sed condimentum sapien pretium. Aenean sit amet lorem tortor, sed laoreet dolor. Pellentesque blandit molestie pharetra. Nam tristique, odio ut mollis pulvinar, leo libero vehicula massa, in porta dui nibh cursus lorem. Duis adipiscing blandit vehicula.
+    dateAjout: '2010-10-23'
+  
+Mention_marginaleMariage:
+  mentionMariage_Acte1:
+    mariage_id: 1
+    mention: MARIAGE Integer non dolor nibh. Duis lacus risus, adipiscing ut blandit at, convallis non erat. Donec rhoncus purus vel leo pulvinar imperdiet. In non ante ac nisl consectetur condimentum. Vestibulum sed nisl nec urna aliquam faucibus ut a tortor. Integer ac arcu erat. Duis dapibus neque quis sapien tincidunt accumsan. Cras non ante sapien, id convallis nunc. Praesent tempor turpis ac ligula vulputate pharetra. Aliquam erat nunc, tempor sed tincidunt vel, tincidunt ac massa. Curabitur dolor augue, ultrices quis fermentum eu, aliquam sed sapien. Suspendisse auctor ullamcorper leo sit amet lobortis. Aenean accumsan risus et tortor accumsan feugiat. Praesent et sagittis risus. Vivamus aliquet libero et urna semper sed condimentum sapien pretium. Aenean sit amet lorem tortor, sed laoreet dolor. Pellentesque blandit molestie pharetra. Nam tristique, odio ut mollis pulvinar, leo libero vehicula massa, in porta dui nibh cursus lorem. Duis adipiscing blandit vehicula.
+    dateAjout: '1800-12-02'
+  mentionMariageN2_Acte1:
+    mariage_id: 1
+    mention: MARIAGE Integer non dolor nibh. Duis lacus risus, adipiscing ut blandit at, convallis non erat. Donec rhoncus purus vel leo pulvinar imperdiet. In non ante ac nisl consectetur condimentum. Vestibulum sed nisl nec urna aliquam faucibus ut a tortor. Integer ac arcu erat. Duis dapibus neque quis sapien tincidunt accumsan. Cras non ante sapien, id convallis nunc. Praesent tempor turpis ac ligula vulputate pharetra. Aliquam erat nunc, tempor sed tincidunt vel, tincidunt ac massa. Curabitur dolor augue, ultrices quis fermentum eu, aliquam sed sapien. Suspendisse auctor ullamcorper leo sit amet lobortis. Aenean accumsan risus et tortor accumsan feugiat. Praesent et sagittis risus. Vivamus aliquet libero et urna semper sed condimentum sapien pretium. Aenean sit amet lorem tortor, sed laoreet dolor. Pellentesque blandit molestie pharetra. Nam tristique, odio ut mollis pulvinar, leo libero vehicula massa, in porta dui nibh cursus lorem. Duis adipiscing blandit vehicula.
+    dateAjout: '1800-12-02'

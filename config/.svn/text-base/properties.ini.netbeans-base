@@ -1,0 +1,4 @@
+[symfony]
+  name=etatCivil
+  author=Your name here
+  orm=Doctrine

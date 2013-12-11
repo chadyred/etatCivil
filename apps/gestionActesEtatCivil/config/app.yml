@@ -1,0 +1,14 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  sf_tiny_doc_plugin:
+    zip_method:    shell             # the method to zip/unzip : shell | ziparchive
+    zip_bin:       zip               # the binary to zip   for 'shell' method
+    unzip_bin:     unzip             # the binary to unzip for 'shell' method
+    process_dir:   %SF_WEB_DIR%/tmp  # the process directory
+
+fr:
+  format_date : "dd-mm-YYYY"
+  format_date_horaire: "dd-mm-YYYY HH:mm:ss"

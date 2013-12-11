@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/gestionacte_etatcivil/!svn/ver/8/etatCivil/test/functional/gestionActesEtatCivil
+END
+mariage_acteurActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/gestionacte_etatcivil/!svn/ver/8/etatCivil/test/functional/gestionActesEtatCivil/mariage_acteurActionsTest.php
+END
+utilisateurActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/gestionacte_etatcivil/!svn/ver/16/etatCivil/test/functional/gestionActesEtatCivil/utilisateurActionsTest.php
+END
+mention_marginalenaissanceActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/gestionacte_etatcivil/!svn/ver/21/etatCivil/test/functional/gestionActesEtatCivil/mention_marginalenaissanceActionsTest.php
+END
+mention_marginalemariageActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/gestionacte_etatcivil/!svn/ver/21/etatCivil/test/functional/gestionActesEtatCivil/mention_marginalemariageActionsTest.php
+END
+mariage_contactActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/gestionacte_etatcivil/!svn/ver/8/etatCivil/test/functional/gestionActesEtatCivil/mariage_contactActionsTest.php
+END
+decesActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/gestionacte_etatcivil/!svn/ver/8/etatCivil/test/functional/gestionActesEtatCivil/decesActionsTest.php
+END
+mention_marginaledecesActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/gestionacte_etatcivil/!svn/ver/21/etatCivil/test/functional/gestionActesEtatCivil/mention_marginaledecesActionsTest.php
+END
+naissance_enfantActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/gestionacte_etatcivil/!svn/ver/8/etatCivil/test/functional/gestionActesEtatCivil/naissance_enfantActionsTest.php
+END
+naissanceActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/gestionacte_etatcivil/!svn/ver/7/etatCivil/test/functional/gestionActesEtatCivil/naissanceActionsTest.php
+END
+mariageActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/gestionacte_etatcivil/!svn/ver/8/etatCivil/test/functional/gestionActesEtatCivil/mariageActionsTest.php
+END
+naissance_acteurActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/gestionacte_etatcivil/!svn/ver/16/etatCivil/test/functional/gestionActesEtatCivil/naissance_acteurActionsTest.php
+END

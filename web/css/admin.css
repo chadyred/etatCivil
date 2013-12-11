@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+a img {
+	border: none;
+}
+
+#conteneur {
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#conteneur #top {
+	height: 40px;
+	width: 100%;
+	overflow: hidden;
+	background-image: url("/images/design/back_top.png");
+	background-repeat: repeat-x;
+}
+
+#conteneur #header {
+	height: 190px;
+	width: 100%;
+	overflow: hidden;
+	background-image: url("/images/design/back_header.png");
+	background-repeat: repeat-x;
+}
+#conteneur #centre {
+	overflow: hidden;
+}
+#conteneur #footer {
+	height: 142px;
+	width: 100%;
+	overflow: hidden;
+	background-image: url("/images/design/back_footer.png");
+	background-repeat: repeat-x;
+}
+
+#conteneur #top .logo_vor {
+	float: left;
+	margin-left: 10px;
+}
+
+#conteneur #top .boutons_top {
+	float: right;
+	height: 40px;
+	margin-right: 20px;
+	margin-top: 9px;
+}
+#conteneur #top .boutons_top a.bouton {
+	display: block;
+	background-image: url("/images/design/back_bouton.png");
+	background-repeat: no-repeat;
+	color: #FFF;
+	width: 72px;
+	height: 19px;
+	line-height: 19px;
+	float: left;
+	text-align: center;
+	margin-right: 15px;
+	text-decoration: none;
+}
+
+#conteneur #top .boutons_top a.bouton:hover {
+	background-image: url("/images/design/back_bouton2.png");
+}
+
+#conteneur #header .title_head {
+	float: left;
+}
+#conteneur #header .title_head h1 {
+	color: #2c4f56;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 35px;
+	margin: 45px 0 15px 60px;
+	text-shadow: 1px 1px 1px #FFF;
+}
+#conteneur #header .title_head h1 span {
+	font-size: 50px;
+	font-style: italic;
+	display: block;
+	margin: 20px 40% 0 0;
+}
+#conteneur #header .title_head p {
+	color: #444444;
+	margin: 20px 0 0px 80px;
+	width: 450px;
+}
+
+#conteneur #header a.image_head {
+        display: block;
+        margin: 50px 0 0 12%;
+        float: left;
+}
+
+
+#conteneur #header div.messages_erreurs {
+        display: block;
+	float: left;
+	width: 205px;
+	margin: 70px 0px 0 15%;
+	padding: 20px;
+	text-align: center;
+	background: #FFF;
+	border: 1px solid #c0c0c0;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+#conteneur #header div.case_quitter {
+        display: block;
+	float: right;
+	width: 205px;
+	margin: 50px 150px 0 15%;
+	padding: 20px;
+	text-align: center;
+	background: #FFF;
+	border: 1px solid #c0c0c0;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+#conteneur #centre {
+    background-color: #F9F8FF;
+}
+
+#conteneur #centre h1 {
+  font-family: serif;         
+  background-image: url("/images/design/back_top.png");
+  background-repeat: repeat-x;
+  color: white;               
+  padding: 0.3em;             
+  text-align: center;         
+  letter-spacing: 0.3em;
+}
+
+#conteneur #centre div {
+    text-align: center;
+    padding: 2em;
+}
+
+#conteneur #centre a{
+   font-family: "Arial Black", Arial, Verdana, serif;
+   font-size: small;
+}
+
+#conteneur #centre table {
+  height: auto;
+  border: 1px solid gray; /* Et on met une jolie bordure originale autour du tableau */
+}
+
+#conteneur #centre caption {
+  text-align: center; /* Classique : texte centré */
+  font-style: italic; /*             en italique  */
+  font-weight: bold;  /*             en gras      */
+  color: #0066CC;     /*             et en bleu   */
+}
+
+#conteneur #centre th { /* Préférable à thead car offre plus de possibilités */
+  background-color: #D3E2ED; /* Chaque case d'en-tête aura un fond bleu */
+  color: #666666;             /* Et un gris un peu plus foncé que la moyenne */
+  width: 10%;
+  height: auto;
+}
+
+#conteneur #centre td {
+   border: 1px dotted gray; /* Vous pouvez essayer de dé-commenter : cela produit un affichage classique des cases */
+   width: 10%;
+   height: auto;
+}
+
+#conteneur #centre .tableau {
+
+    text-align: center; /** Centre le texte des tableau */
+    margin: auto;       /** Place le tableau au centre de l'écran */
+    width: 70%;
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+#conteneur #centre .bouton {
+    float: left;
+    margin:2px;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+#conteneur #centre .bouton2 a{
+
+    float: left;
+    display: block;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background: url(/images/bouton-noir.png) no-repeat ;
+    color: white;
+    text-decoration: none;
+    margin:2px;
+
+}
+
+#conteneur #centre .bouton a
+{
+    display: block;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background: url(/images/bouton-noir.png) no-repeat ;
+    color: white;
+    text-decoration: none;
+    margin:2px;
+}
+
+#conteneur #centre .bouton a:hover {
+    background: url(/images/bouton-noir-2.png) no-repeat;
+}
+
+#conteneur #centre .InfoActe {
+    display: block; /** Met en forme le cadre */
+    padding: 5px; /** Marge entre texte et les bordure */
+    float: left;
+    margin-left: 35%;
+    font-size: 10pt;
+    text-align: center;
+    color: navy;
+    border: 1px dotted black;
+    margin-bottom: 10px;
+}
+
+#conteneur #footer .logoF #block1 {
+    text-align: center;
+    
+}
+
+#conteneur #footer .logoF #block1 img{
+    background-color: #F9F8FF;
+    margin: 0.4em;
+}
+
+#conteneur #footer .logoF #block1 p{
+    color: white;
+}
+
+#conteneur #centre .pop_up_tableau {
+
+    text-align: center; /** Centre le texte des tableau */
+    margin: auto;       /** Place le tableau au centre de l'écran */
+    width: 70%;
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}

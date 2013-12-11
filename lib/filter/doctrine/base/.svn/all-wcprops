@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/gestionacte_etatcivil/!svn/ver/11/etatCivil/lib/filter/doctrine/base
+END
+BaseMariage_contactFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/filter/doctrine/base/BaseMariage_contactFormFilter.class.php
+END
+BaseDecesFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/filter/doctrine/base/BaseDecesFormFilter.class.php
+END
+BaseNaissanceFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/filter/doctrine/base/BaseNaissanceFormFilter.class.php
+END
+BaseMariageFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/filter/doctrine/base/BaseMariageFormFilter.class.php
+END
+BaseNaissance_acteurFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/filter/doctrine/base/BaseNaissance_acteurFormFilter.class.php
+END
+BaseMariage_acteurFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/filter/doctrine/base/BaseMariage_acteurFormFilter.class.php
+END
+BaseUtilisateurFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/filter/doctrine/base/BaseUtilisateurFormFilter.class.php
+END
+BaseMention_marginaleDecesFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/filter/doctrine/base/BaseMention_marginaleDecesFormFilter.class.php
+END
+BaseMention_marginaleNaissanceFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/filter/doctrine/base/BaseMention_marginaleNaissanceFormFilter.class.php
+END
+BaseMention_marginaleMariageFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/filter/doctrine/base/BaseMention_marginaleMariageFormFilter.class.php
+END
+BaseNaissance_enfantFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/filter/doctrine/base/BaseNaissance_enfantFormFilter.class.php
+END

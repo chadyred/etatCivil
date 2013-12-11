@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gestionacte_etatcivil/!svn/ver/11/etatCivil/lib/form/doctrine
+END
+BaseFormDoctrine.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/form/doctrine/BaseFormDoctrine.class.php
+END
+DecesForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gestionacte_etatcivil/!svn/ver/25/etatCivil/lib/form/doctrine/DecesForm.class.php
+END
+NaissanceForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/gestionacte_etatcivil/!svn/ver/25/etatCivil/lib/form/doctrine/NaissanceForm.class.php
+END
+MariageForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/gestionacte_etatcivil/!svn/ver/25/etatCivil/lib/form/doctrine/MariageForm.class.php
+END
+Naissance_acteurForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/form/doctrine/Naissance_acteurForm.class.php
+END
+Mariage_acteurForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/gestionacte_etatcivil/!svn/ver/25/etatCivil/lib/form/doctrine/Mariage_acteurForm.class.php
+END
+UtilisateurForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/form/doctrine/UtilisateurForm.class.php
+END
+Mention_marginaleDecesForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/gestionacte_etatcivil/!svn/ver/25/etatCivil/lib/form/doctrine/Mention_marginaleDecesForm.class.php
+END
+Mention_marginaleNaissanceForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/gestionacte_etatcivil/!svn/ver/25/etatCivil/lib/form/doctrine/Mention_marginaleNaissanceForm.class.php
+END
+Mention_marginaleMariageForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/gestionacte_etatcivil/!svn/ver/25/etatCivil/lib/form/doctrine/Mention_marginaleMariageForm.class.php
+END
+Naissance_enfantForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/gestionacte_etatcivil/!svn/ver/25/etatCivil/lib/form/doctrine/Naissance_enfantForm.class.php
+END
+Mariage_contactForm.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/gestionacte_etatcivil/!svn/ver/24/etatCivil/lib/form/doctrine/Mariage_contactForm.class.php
+END

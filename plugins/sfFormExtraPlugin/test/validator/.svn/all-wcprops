@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/gestionacte_etatcivil/!svn/ver/15/etatCivil/plugins/sfFormExtraPlugin/test/validator
+END
+sfValidatorReCaptchaTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/gestionacte_etatcivil/!svn/ver/15/etatCivil/plugins/sfFormExtraPlugin/test/validator/sfValidatorReCaptchaTest.php
+END
+sfValidatorDefaultTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/gestionacte_etatcivil/!svn/ver/15/etatCivil/plugins/sfFormExtraPlugin/test/validator/sfValidatorDefaultTest.php
+END
+sfValidatorSchemaTimeIntervalTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/gestionacte_etatcivil/!svn/ver/15/etatCivil/plugins/sfFormExtraPlugin/test/validator/sfValidatorSchemaTimeIntervalTest.php
+END
+sfValidatorBlacklistTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/gestionacte_etatcivil/!svn/ver/15/etatCivil/plugins/sfFormExtraPlugin/test/validator/sfValidatorBlacklistTest.php
+END

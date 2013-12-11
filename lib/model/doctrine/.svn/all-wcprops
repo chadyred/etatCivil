@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/gestionacte_etatcivil/!svn/ver/11/etatCivil/lib/model/doctrine
+END
+Mention_marginaleNaissanceTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/Mention_marginaleNaissanceTable.class.php
+END
+Mention_marginaleMariageTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/Mention_marginaleMariageTable.class.php
+END
+Mariage_contactTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/Mariage_contactTable.class.php
+END
+DecesTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/DecesTable.class.php
+END
+Mention_marginaleDeces.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/Mention_marginaleDeces.class.php
+END
+Naissance_enfant.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/Naissance_enfant.class.php
+END
+Naissance.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/Naissance.class.php
+END
+Mention_marginaleDecesTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/Mention_marginaleDecesTable.class.php
+END
+Mariage.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/Mariage.class.php
+END
+Naissance_enfantTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/Naissance_enfantTable.class.php
+END
+Naissance_acteur.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/Naissance_acteur.class.php
+END
+Mariage_acteur.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/Mariage_acteur.class.php
+END
+Utilisateur.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/Utilisateur.class.php
+END
+NaissanceTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/NaissanceTable.class.php
+END
+MariageTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/MariageTable.class.php
+END
+Mention_marginaleNaissance.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/Mention_marginaleNaissance.class.php
+END
+Mention_marginaleMariage.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/Mention_marginaleMariage.class.php
+END
+Naissance_acteurTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/Naissance_acteurTable.class.php
+END
+Mariage_contact.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/Mariage_contact.class.php
+END
+Mariage_acteurTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/Mariage_acteurTable.class.php
+END
+UtilisateurTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/UtilisateurTable.class.php
+END
+Deces.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/Deces.class.php
+END

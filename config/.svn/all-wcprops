@@ -1,0 +1,33 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 36
+/svn/gestionacte_etatcivil/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/gestionacte_etatcivil/!svn/ver/12/etatCivil/config
+END
+rsync_exclude.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gestionacte_etatcivil/!svn/ver/3/etatCivil/config/rsync_exclude.txt
+END
+databases.yml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gestionacte_etatcivil/!svn/ver/4/etatCivil/config/databases.yml
+END
+ProjectConfiguration.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gestionacte_etatcivil/!svn/ver/12/etatCivil/config/ProjectConfiguration.class.php
+END
+properties.ini
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/gestionacte_etatcivil/!svn/ver/3/etatCivil/config/properties.ini
+END

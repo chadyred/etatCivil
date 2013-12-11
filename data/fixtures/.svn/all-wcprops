@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gestionacte_etatcivil/!svn/ver/9/etatCivil/data/fixtures
+END
+050_user.yml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/gestionacte_etatcivil/!svn/ver/13/etatCivil/data/fixtures/050_user.yml
+END
+020_naissance.yml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/gestionacte_etatcivil/!svn/ver/22/etatCivil/data/fixtures/020_naissance.yml
+END
+030_deces.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/gestionacte_etatcivil/!svn/ver/22/etatCivil/data/fixtures/030_deces.yml
+END
+040_mariage.yml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/gestionacte_etatcivil/!svn/ver/22/etatCivil/data/fixtures/040_mariage.yml
+END
+fixtures.yml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gestionacte_etatcivil/!svn/ver/3/etatCivil/data/fixtures/fixtures.yml
+END
+010_mention.yml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/gestionacte_etatcivil/!svn/ver/22/etatCivil/data/fixtures/010_mention.yml
+END

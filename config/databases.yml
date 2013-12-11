@@ -1,0 +1,15 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=etatCivil'
+      username: root
+
+      #A décommenter pour le fonctionnement en pre-prod      
+      #password: H6F6rk2b
+
+      #A décommenter pour le fonctionnement sur le poste de dev
+      password: root
+
+      #A décommenter pour le fonctionnement sur le poste de prod
+      #password: linux1354prod

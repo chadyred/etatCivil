@@ -1,0 +1,103 @@
+Mariage:
+  Acte1_mariage:
+
+    numeroActe :                     2
+    numeroOrdre:                     1
+    dateActe :                       '2011-03-23'
+    heureActe :                      '14:08:40'
+    dateReceptionContrat:            '1952-01-01'
+    nomPrenomNotaire:                Curabitur eros ante
+    adresseNotaire:                  Integer condimentum malesuada ante. Phasellus sodales mattis ultrices. Maecenas ultricies enim quis leo vehicula blandit.
+
+Mariage_Acteur:
+  Epoux_acte1:
+    mariage_id:                     1
+    mariageNumeroActe:              2
+    nom:                            Jules
+    prenom:                         Verne
+    typeActeur:                     époux
+    dateNaissance:                  '1960-01-01'
+    lieuNaissance:                  Vivamus egestas, sem non auctor faucibus, lacus ligula fermentum risus, eu volutpat est tortor vel enim. Phasellus venenatis lacinia arcu. Cras sit amet sem eu ipsum hendrerit cursus.
+    domicile:                       Ollis a mi. Ut felis arcu, iaculis sit amet adipiscing in, pharetra vel augue. Nulla sit amet velit magna. Ut vitae augue sed tortor c
+    residence:                      Nulla sed pretium quam.
+    profession:                     Phasellus venenatis
+    etatAnterieurMariage:           célibataire
+    nomPrenomPrecConjoint:
+  Epouse_acte1:
+    mariage_id:                     1
+    mariageNumeroActe:              2
+    nom:                            Polichinelle
+    prenom:                         Marie
+    typeActeur:                     épouse
+    dateNaissance:                  '1969-02-12'
+    lieuNaissance:                  Vivamus egestas, sem non auctor faucibus, lacus ligula fermentum risus, eu volutpat est tortor vel enim. Phasellus venenatis lacinia arcu. Cras sit amet sem eu ipsum hendrerit cursus.
+    domicile:                       Ollis a mi. Ut felis arcu, iaculis sit amet adipiscing in, pharetra vel augue. Nulla sit amet velit magna. Ut vitae augue sed tortor c
+    residence:                      Nulla sed pretium quam.
+    profession:                     Phasellus venenatis
+    etatAnterieurMariage:           divorcé(e)
+    nomPrenomPrecConjoint:          Charlie pompom
+
+Mariage_Contact:
+  TemoinEpouse1_acte1:
+    mariage_id:                     1
+    mariageNumeroActe:              2
+    nom:                            Morbon
+    prenom:                         Paul
+    typeContact:                    témoin
+    age:                            30
+    domicile:                       Ollis a mi. Ut felis arcu
+    profession:                     boucher
+  TemoinEpouse2_acte1:
+    mariage_id:                     1
+    mariageNumeroActe:             2
+    nom:                            Grochon
+    prenom:                         Julie
+    typeContact:                    témoin
+    age:                            25
+    domicile:                       Ollis a mi. Ut felis arcu
+    profession:                     banquière
+  TemoinEpoux_acte1:
+    mariage_id:                     1
+    mariageNumeroActe:             2
+    nom:                            Globule
+    prenom:                         Jacque
+    typeContact:                    témoin
+    age:                            36
+    domicile:                       Ollis a mi. Ut felis arcu
+    profession:                     pharmacien
+  PereEpouse_acte1:
+    mariage_id:                     1
+    mariageNumeroActe:             2
+    nom:                            Jules
+    prenom:                         Richard
+    typeContact:                    père
+    age:                            58
+    domicile:                       Ollis a mi. Ut felis arcu
+    profession:                     retraité
+  MereEpouse_acte1:
+    mariage_id:                     1
+    mariageNumeroActe:             2
+    nom:                            Jules
+    prenom:                         Sophie
+    typeContact:                    mère
+    age:                            56
+    domicile:                       Ollis a mi. Ut felis arcu
+    profession:                     retraitée
+  PereEpoux_acte1:
+    mariage_id:                     1
+    mariageNumeroActe:             2
+    nom:                            Polichinelle
+    prenom:                         Jean
+    typeContact:                    père
+    age:                            60
+    domicile:                       Ollis a mi. Ut felis arcu
+    profession:                     chercheur NASA
+  MereEpoux_acte1:
+    mariage_id:                     1
+    mariageNumeroActe:             2
+    nom:                            Polichinelle
+    prenom:                         Hugette
+    typeContact:                    mère
+    age:                            58
+    domicile:                       Ollis a mi. Ut felis arcu
+    profession:                     retraitée

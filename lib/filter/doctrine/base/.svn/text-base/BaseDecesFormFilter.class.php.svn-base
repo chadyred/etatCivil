@@ -1,0 +1,113 @@
+<?php
+
+/**
+ * Deces filter form base class.
+ *
+ * @package    etatCivil
+ * @subpackage filter
+ * @author     Your name here
+ * @version    SVN: $Id: sfDoctrineFormFilterGeneratedTemplate.php 29570 2010-05-21 14:49:47Z Kris.Wallsmith $
+ */
+abstract class BaseDecesFormFilter extends BaseFormFilterDoctrine
+{
+  public function setup()
+  {
+    $this->setWidgets(array(
+      'deces_id'            => new sfWidgetFormFilterInput(),
+      'numeroActe'          => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'numeroOrdre'         => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'dateActe'            => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'heureActe'           => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'typeActe'            => new sfWidgetFormChoice(array('choices' => array('' => '', 'décès' => 'décès', 'transcription' => 'transcription'))),
+      'nomDefunt'           => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'prenomDefunt'        => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'dateDeces'           => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'heureDeces'          => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'dateApproximative'   => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'lieuDeces'           => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'professionDefunt'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'domicileDefunt'      => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'dateNaissanceDefunt' => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'lieuNaissanceDefunt' => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'nomPrenomPereDefunt' => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'nomPrenomMereDefunt' => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'statutMatrimoniale'  => new sfWidgetFormChoice(array('choices' => array('' => '', 'célibataire' => 'célibataire', 'marié(e)' => 'marié(e)', 'veuf(ve)' => 'veuf(ve)', 'divorcé(e)' => 'divorcé(e)'))),
+      'nomDeclarant'        => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'prenomDeclarant'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'ageDeclarant'        => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'professionDeclarant' => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'adresseDeclarant'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
+    ));
+
+    $this->setValidators(array(
+      'deces_id'            => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'numeroActe'          => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'numeroOrdre'         => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'dateActe'            => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
+      'heureActe'           => new sfValidatorPass(array('required' => false)),
+      'typeActe'            => new sfValidatorChoice(array('required' => false, 'choices' => array('décès' => 'décès', 'transcription' => 'transcription'))),
+      'nomDefunt'           => new sfValidatorPass(array('required' => false)),
+      'prenomDefunt'        => new sfValidatorPass(array('required' => false)),
+      'dateDeces'           => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
+      'heureDeces'          => new sfValidatorPass(array('required' => false)),
+      'dateApproximative'   => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'lieuDeces'           => new sfValidatorPass(array('required' => false)),
+      'professionDefunt'    => new sfValidatorPass(array('required' => false)),
+      'domicileDefunt'      => new sfValidatorPass(array('required' => false)),
+      'dateNaissanceDefunt' => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
+      'lieuNaissanceDefunt' => new sfValidatorPass(array('required' => false)),
+      'nomPrenomPereDefunt' => new sfValidatorPass(array('required' => false)),
+      'nomPrenomMereDefunt' => new sfValidatorPass(array('required' => false)),
+      'statutMatrimoniale'  => new sfValidatorChoice(array('required' => false, 'choices' => array('célibataire' => 'célibataire', 'marié(e)' => 'marié(e)', 'veuf(ve)' => 'veuf(ve)', 'divorcé(e)' => 'divorcé(e)'))),
+      'nomDeclarant'        => new sfValidatorPass(array('required' => false)),
+      'prenomDeclarant'     => new sfValidatorPass(array('required' => false)),
+      'ageDeclarant'        => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'professionDeclarant' => new sfValidatorPass(array('required' => false)),
+      'adresseDeclarant'    => new sfValidatorPass(array('required' => false)),
+    ));
+
+    $this->widgetSchema->setNameFormat('deces_filters[%s]');
+
+    $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);
+
+    $this->setupInheritance();
+
+    parent::setup();
+  }
+
+  public function getModelName()
+  {
+    return 'Deces';
+  }
+
+  public function getFields()
+  {
+    return array(
+      'id'                  => 'Number',
+      'deces_id'            => 'Number',
+      'numeroActe'          => 'Number',
+      'numeroOrdre'         => 'Number',
+      'dateActe'            => 'Date',
+      'heureActe'           => 'Text',
+      'typeActe'            => 'Enum',
+      'nomDefunt'           => 'Text',
+      'prenomDefunt'        => 'Text',
+      'dateDeces'           => 'Date',
+      'heureDeces'          => 'Text',
+      'dateApproximative'   => 'Boolean',
+      'lieuDeces'           => 'Text',
+      'professionDefunt'    => 'Text',
+      'domicileDefunt'      => 'Text',
+      'dateNaissanceDefunt' => 'Date',
+      'lieuNaissanceDefunt' => 'Text',
+      'nomPrenomPereDefunt' => 'Text',
+      'nomPrenomMereDefunt' => 'Text',
+      'statutMatrimoniale'  => 'Enum',
+      'nomDeclarant'        => 'Text',
+      'prenomDeclarant'     => 'Text',
+      'ageDeclarant'        => 'Number',
+      'professionDeclarant' => 'Text',
+      'adresseDeclarant'    => 'Text',
+    );
+  }
+}

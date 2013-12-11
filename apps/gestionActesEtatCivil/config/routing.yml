@@ -1,0 +1,587 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# Routes qui permettent la mise en place des champs d'autocompletions
+ajax_getCitys:
+  url:   /ajax/getCitys
+  param:  { module: deces, action: getVilles }
+
+ajax_getNotaires:
+  url:   /ajax/getNotaires
+  param:  { module: mariage, action: getNotaires }
+
+ajax_getOfficiers:
+  url:   /ajax/getOfficiers
+  param:  { module: mariage, action: getOfficiers }
+#-------------------------------------------------------------------------------
+# Routes du menu
+
+Menu_logIn:
+  url:   /
+  param: { module: utilisateur, action: index }
+
+Menu_selection:
+  url: /choixMenu
+  param: { module: utilisateur, action: selection }
+
+Liste_Naissance:
+  url: /listeNaissance
+  param: { module: naissance, action: index }
+
+Liste_Mariage:
+  url: /listeMariage
+  param: { module: mariage, action: index }
+
+Liste_Deces:
+  url: /listeDeces
+  param: { module: deces, action: index}
+
+Generation_Tables_Annuelle:
+  url: /gerererTables/annuelle
+  class: sfDoctrineRoute
+  options:  { model: utilisateur, type: object }
+  param:    { module: utilisateur, action: tablesAnnuelle }
+
+Generation_Tables_Decenale:
+  url: /gerererTables/decenale
+  class: sfDoctrineRoute
+  options:  { model: utilisateur, type: object }
+  param:    { module: utilisateur, action: tablesDecenale }
+
+#-------------------------------------------------------------------------------
+# Route des Actes de naissance
+
+naissance:
+  class:   sfDoctrineRouteCollection
+  options: { model: Naissance }
+
+NouvelActeNaissance:
+  url: /nouvelacte_naissance
+  param: { module: naissance, action: new }
+
+naissance_search:
+  url: naissance/search
+  param: { module : naissance, action : search }
+
+naissance_result:
+  url: naissance/result
+  param: { module : naissance, action : result }
+
+DetailActeNaissance:
+  url: /detailNaissance/:id
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: show }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+EditerActeNaissance:
+  url: /editionNaissance/:id
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: edit }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+naissance_enfant:
+  class:   sfDoctrineRouteCollection
+  options: { model: Naissance }
+
+Show_naissance_enfant:
+  url: /naissance/enfant/:id
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance_enfant, action: ShowByNaissance }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+naissance_acteur:
+  class:   sfDoctrineRouteCollection
+  options: { model: Naissance }
+
+naissance_acteur_newPere:
+  url:     /naissance/pere/new.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param:   { module: naissance_acteur, action: newPere, sf_format: html }
+  requirements: { sf_method: get }
+
+naissance_acteur_newMere:
+  url:     /naissance/mere/new.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param:   { module: naissance_acteur, action: newMere, sf_format: html }
+  requirements: { sf_method: get }
+
+Show_naissance_parents:
+  url: /naissance/parents/:id
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance_acteur, action: ShowByNaissance }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+mention_marginalenaissance:
+  class:   sfDoctrineRouteCollection
+  options: { model: Naissance }
+
+
+Show_MentionsActeNaissance:
+  url: /mentionsNaissance/:id
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: mention_marginalenaissance, action: showByNaissance }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+popUpDocumentsNaissance:
+  url: /popUp/documents/naissance/:id
+  param: { module: naissance, action: popUpDocuments }
+
+genererActes_naissance:
+  url: /genererActe/naissance
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: acteNaissance }
+
+genererActes_reconnaissanceAnt_PM:
+  url: /genererActe/reconnaissance_Anterieure/PereEtMere
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: acteReconnaissanceAnterieurePM }
+
+genererActes_reconnaissanceAnt_P:
+  url: /genererActe/reconnaissance_Anterieure/Pere
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: acteReconnaissanceAnterieureP }
+
+genererActes_reconnaissanceAnt_M:
+  url: /genererActe/reconnaissance_Anterieure/Mere
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: acteReconnaissanceAnterieureM }
+
+genererActeCommunicable_recoAntM:
+  url: /genererActe/communicable_recoAntM
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: acteRecoAnterieureCommunicableM }
+
+genererActeCommunicable_recoAntP:
+  url: /genererActe/communicable_recoAntP
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: acteRecoAnterieureCommunicableP }
+
+genererActeCommunicable_recoAntPM:
+  url: /genererActe/communicable_recoAntPM
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: acteRecoAnterieureCommunicablePM }
+
+genererActes_reconnaissancePost:
+  url: /genererActe/reconnaissance_Posterieure
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: acteReconnaissancePosterieure }
+
+genererActes_changementDeNom:
+  url: /genererActe/genererActes_changementDeNom
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: acteChangementDeNom }
+
+image_RegistreNaissance:
+  class:   sfDoctrineRouteCollection
+  options: { model: Naissance }
+
+
+show_scansRegistre_Naissance:
+  url: /scansRegistreNaissance/:id
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: image_RegistreNaissance, action: showByNaissance }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+image_RegistreNaissance_download:
+  url: /image_RegistreNaissance/download/:id/:scan.pdf
+  param: { module: image_RegistreNaissance, action: download }
+  requirement:
+    id: \d+
+
+genererActesPlurilingues_naissance:
+  url: /genererActe/plurilingues_naissance
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: plurilinguesNaissance}
+
+genererAvis_chgt_nom:
+  url: /genererAvis/changement_nom
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: avisChgtNom }
+
+genererAvisReconnaissancePost:
+  url: /genererAvis/reconnaissance/posterieure
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: avisReconnaissancePost}
+
+genererLivretModeleNaissance:
+  url: /generer/Livret_Famille
+  class: sfDoctrineRoute
+  options: { model: Naissance, type: object }
+  param: { module: naissance, action: livretModele }
+
+
+#-------------------------------------------------------------------------------
+# routes mariage
+mariage:
+  class:   sfDoctrineRouteCollection
+  options: { model: Mariage }
+
+DetailActeMariage:
+  url: /detailMariage/:id
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage, action: show }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+mariage_acteur:
+  class:   sfDoctrineRouteCollection
+  options: { model: Mariage }
+
+mariage_search:
+  url: mariage/search
+  param: { module : mariage, action : search }
+
+mariage_result:
+  url: mariage/result
+  param: { module : mariage, action : result }
+
+mariage_acteur_newEpoux:
+  url:     /mariage/epoux/new.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param:   { module: mariage_acteur, action: newEpoux, sf_format: html }
+  requirements: { sf_method: get }
+
+mariage_acteur_newEpouse:
+  url:     /mariage/epouse/new.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param:   { module: mariage_acteur, action: NewEpouse, sf_format: html }
+  requirements: { sf_method: get }
+
+show_acteur_by_Mariage:
+  url: /acteursMariage/:mariage_id
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage_acteur, action: ShowByMariage }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+mariage_contact:
+  class:   sfDoctrineRouteCollection
+  options: { model: Mariage }
+
+mariage_contact_newTemoinEpoux:
+  url:     /mariage/epoux/new/temoin.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param:   { module: mariage_contact, action: newTemoinEpoux, sf_format: html }
+  requirements: { sf_method: get }
+
+mariage_contact_newPereEpoux:
+  url:     /mariage/epoux/new/pere.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param:   { module: mariage_contact, action: newPereEpoux, sf_format: html }
+  requirements: { sf_method: get }
+
+mariage_contact_newMereEpoux:
+  url:     /mariage/epoux/new/mere.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param:   { module: mariage_contact, action: newMereEpoux, sf_format: html }
+  requirements: { sf_method: get }
+
+mariage_contact_newTemoinEpouse:
+  url:     /mariage/epouse/new/temoin.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param:   { module: mariage_contact, action: newTemoinEpouse, sf_format: html }
+  requirements: { sf_method: get }
+
+mariage_contact_newPereEpouse:
+  url:     /mariage/epouse/new/pere.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param:   { module: mariage_contact, action: newPereEpouse, sf_format: html }
+  requirements: { sf_method: get }
+
+mariage_contact_newMereEpouse:
+  url:     /mariage/epouse/new/mere.:sf_format
+  class:   sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param:   { module: mariage_contact, action: newMereEpouse, sf_format: html }
+  requirements: { sf_method: get }
+
+show_temoins_by_Mariage:
+  url: /mariage/temoins/:mariage_id
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage_contact, action: ShowTemoinsByMariage }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+show_parents_by_Mariage:
+  url: /mariage/parents/:mariage_id
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage_contact, action: ShowParentsByMariage }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+mention_marginalemariage:
+  class:   sfDoctrineRouteCollection
+  options: { model: Mariage }
+
+show_mention_by_Mariage:
+  url: /mentionsMariage/:mariage_id
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mention_marginalemariage, action: ShowByMariage }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+image_RegistreMariage:
+  class:   sfDoctrineRouteCollection
+  options: { model: Mariage }
+
+show_scanRegistre_Mariage:
+  url: /scansRegistreMariage/:mariage_id
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: image_RegistreMariage, action: showByMariage }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+image_RegistreMariage_download:
+  url: /image_RegistreMariage/download/:id/:scan.pdf
+  param: { module: image_RegistreMariage, action: download }
+  requirement:
+    id: \d+
+
+popUpDocumentsMariage:
+  url: /popUp/documents/mariage/:id
+  param: { module: mariage, action: popUpDocuments }
+
+genererActes_mariage:
+  url: /genererActe/mariage
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage, action: acteMariage }
+
+genererActesPlurilingues_mariage:
+  url: /genererActe/plurilingues_mariage
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage, action: plurilinguesMariage}
+
+genererArticle_loi_mariage:
+  url: /genererActe/mariage/article/loi
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage, action: articleLoiMariage}
+
+genererDossier_tribunal:
+  url: /genererActe/mariage/dossier/tribunal
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage, action: dossierTribunal}
+  
+genererAvis_mention_divorce_procureur:
+  url: /genererAvis/mariage/divorce/procureur
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage, action: avisMentionDivorceProc }
+
+genererAvis_mention_mariage_epoux:
+  url: /genererAvis/mariage/epoux
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage, action: avisMentionMariageEpoux }
+
+genererAvis_mention_mariage_epouse:
+  url: /genererAvis/mariage/epouse
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage, action: avisMentionMariageEpouse }
+
+genererAvis_mention_proc:
+  url: /genererAvis/mariage/proc
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage, action: avisMentionMariageProc }
+
+genererAvis_mention_epoux_proc:
+  url: /genererAvis/mariage/epoux_proc
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage, action: avisMentionMariageEpouxProc }
+
+genererAvis_mention_epouse_proc:
+  url: /genererAvis/mariage/epouse_proc
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage, action: avisMentionMariageEpouseProc }
+  
+genererLivretModeleMariage:
+  url: /generer/livret/famille
+  class: sfDoctrineRoute
+  options: { model: Mariage, type: object }
+  param: { module: mariage, action: livretModele }
+
+#-------------------------------------------------------------------------------
+# routes deces
+deces:
+  class:   sfDoctrineRouteCollection
+  options: { model: Deces }
+
+deces_search:
+  url: deces/search
+  param: { module : deces, action : search }
+
+deces_result:
+  url: deces/result
+  param: { module : deces, action : result }
+
+DetailActeDeces:
+  url: /detailDeces/:id
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: deces, action: show }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+mention_marginaledeces:
+  class:   sfDoctrineRouteCollection
+  options: { model: Deces }
+
+show_mentions_by_Deces:
+  url: /mentionsDeces/:deces_id
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: mention_marginaledeces, action: ShowByDeces }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+image_RegistreDeces:
+  class:   sfDoctrineRouteCollection
+  options: { model: Deces }
+
+show_scanRegistre_Deces:
+  url: /scansRegistreDeces/:deces_id
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: image_RegistreDeces, action: showByDeces }
+  requirement:
+    id: \d+
+    sf_method: [get]
+
+image_RegistreDeces_download:
+  url: /image_RegistreDeces/download/:id/:scan.pdf
+  options: { model: image_RegistreDeces, type: object }
+  param: { module: image_RegistreDeces, action: download }
+  requirement:
+    id: \d+
+
+genererActes_deces:
+  url: /genererActe/deces
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: deces, action: acteDeces }
+
+genererActeCommunicable_deces:
+  url: /genererActe/communicable_deces
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: deces, action: acteDecesCommunicable }
+
+
+genererActesTranscription_deces:
+  url: /genererActe/transcription_deces
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: deces, action: acteTranscriptionDeces}
+
+popUpDocumentsDeces:
+  url: /popUp/documents/deces/:id
+  param: { module: deces, action: popUpDocuments }
+
+genererActesPlurilingues_deces:
+  url: /genererActe/plurilingues_deces
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: deces, action: plurilinguesDeces}
+
+genererDoc_Impots_deces:
+  url: /genererActe/deces/doc_impots
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: deces, action: docImpotsDeces}
+
+genererAvis_mention_deces:
+  url: /genererActe/deces/avis/mention
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: deces, action: avisMentionDeces }
+
+genererAvis_mention_deces_procureur:
+  url: /genererActe/deces/avis/mention/procureur
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: deces, action: avisMentionDecesProc }
+
+genererAvis_mention_deces_varces:
+  url: /genererActe/deces/avis/mention/varces
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: deces, action: avisMentionDecesVarces }
+
+genererAvis_transcription_deces:
+  url: /genererActe/deces/avis/transcription
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: deces, action: avisTranscriptionDeces }
+
+genererAvis_mention_Notoriete:
+  url: /genererActe/deces/avis/mention/notoriete
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: deces, action: avisMentionNotoriete }
+
+genererAvis_mention_Notoriete_procureur:
+  url: /genererActe/deces/avis/mention/notoriete/procureur
+  class: sfDoctrineRoute
+  options: { model: Deces, type: object }
+  param: { module: deces, action: avisMentionNotorieteProc }
+#-------------------------------------------------------------------------------

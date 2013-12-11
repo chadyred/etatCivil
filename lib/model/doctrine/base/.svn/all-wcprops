@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gestionacte_etatcivil/!svn/ver/11/etatCivil/lib/model/doctrine/base
+END
+BaseUtilisateur.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/gestionacte_etatcivil/!svn/ver/14/etatCivil/lib/model/doctrine/base/BaseUtilisateur.class.php
+END
+BaseMention_marginaleDeces.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/base/BaseMention_marginaleDeces.class.php
+END
+BaseMention_marginaleNaissance.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/base/BaseMention_marginaleNaissance.class.php
+END
+BaseMention_marginaleMariage.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/base/BaseMention_marginaleMariage.class.php
+END
+BaseNaissance_enfant.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/base/BaseNaissance_enfant.class.php
+END
+BaseMariage_contact.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/base/BaseMariage_contact.class.php
+END
+BaseDeces.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/base/BaseDeces.class.php
+END
+BaseNaissance.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/base/BaseNaissance.class.php
+END
+BaseMariage.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/base/BaseMariage.class.php
+END
+BaseNaissance_acteur.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/base/BaseNaissance_acteur.class.php
+END
+BaseMariage_acteur.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/gestionacte_etatcivil/!svn/ver/20/etatCivil/lib/model/doctrine/base/BaseMariage_acteur.class.php
+END

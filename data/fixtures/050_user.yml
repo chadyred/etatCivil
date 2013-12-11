@@ -1,0 +1,15 @@
+## YAML Template.
+---
+Utilisateur:
+  user1:
+    Login:                          jimmy
+    password:                       jboyer
+    droits:                         user
+    nom:                            Boyer
+    prenom:                         jimmy
+  admin:
+    Login:  admin
+    password: admin
+    droits: admin
+    nom:  admin
+    prenom: admin

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/gestionacte_etatcivil/!svn/ver/3/etatCivil/apps/gestionActesEtatCivil/config
+END
+factories.yml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/gestionacte_etatcivil/!svn/ver/3/etatCivil/apps/gestionActesEtatCivil/config/factories.yml
+END
+gestionActesEtatCivilConfiguration.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/gestionacte_etatcivil/!svn/ver/3/etatCivil/apps/gestionActesEtatCivil/config/gestionActesEtatCivilConfiguration.class.php
+END
+app.yml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/gestionacte_etatcivil/!svn/ver/3/etatCivil/apps/gestionActesEtatCivil/config/app.yml
+END
+settings.yml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/gestionacte_etatcivil/!svn/ver/3/etatCivil/apps/gestionActesEtatCivil/config/settings.yml
+END
+cache.yml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/gestionacte_etatcivil/!svn/ver/3/etatCivil/apps/gestionActesEtatCivil/config/cache.yml
+END
+routing.yml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/gestionacte_etatcivil/!svn/ver/3/etatCivil/apps/gestionActesEtatCivil/config/routing.yml
+END
+security.yml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/gestionacte_etatcivil/!svn/ver/3/etatCivil/apps/gestionActesEtatCivil/config/security.yml
+END
+filters.yml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/gestionacte_etatcivil/!svn/ver/3/etatCivil/apps/gestionActesEtatCivil/config/filters.yml
+END
+view.yml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/gestionacte_etatcivil/!svn/ver/26/etatCivil/apps/gestionActesEtatCivil/config/view.yml
+END

@@ -1,0 +1,142 @@
+h1 { /** gros titre */
+  font-family: serif;         /* On se permet un changement de police : pas plus de deux par page, et à utiliser avec parcimonie (c'est le cas) */
+  background: #0066CC none;   /* Fond du titre bleu (et sans image de fond) */
+  color: white;               /*  Donc on utilise une police blanche pour que le texte soit visible */
+  border: 3px dotted #9999FF; /* On encadre le titre d'un bleu clair de 3 pixels de largeur */
+  padding: 0.3em;             /* Espacement intérieur non nul pour que le texte ne colle pas à la bordure du cadre */
+  text-align: center;         /* Le titre doit être centré ! */
+  letter-spacing: 0.3em;      /* On espace les caractères pour que ce soit joli :-) */
+}
+
+.banniereTop {
+    text-align: center;
+    background: #0066CC none;
+    padding: 0.3em;
+    float: none;
+}
+
+body{
+    background-color: #F0F8FF;
+}
+
+a{
+   font-family: "Arial Black", Arial, Verdana, serif;
+   font-size: small;
+}
+
+table {
+  height: auto;
+  border: 1px solid gray; /* Et on met une jolie bordure originale autour du tableau */
+}
+caption {
+  text-align: center; /* Classique : texte centré */
+  font-style: italic; /*             en italique  */
+  font-weight: bold;  /*             en gras      */
+  color: #0066CC;     /*             et en bleu   */
+}
+th { /* Préférable à thead car offre plus de possibilités */
+  background-color: #D3E2ED; /* Chaque case d'en-tête aura un fond bleu */
+  color: #666666;             /* Et un gris un peu plus foncé que la moyenne */
+  width: 10%;
+  height: auto;
+}
+td {
+   border: 1px dotted gray; /* Vous pouvez essayer de dé-commenter : cela produit un affichage classique des cases */
+   width: 10%;
+   height: auto;
+}
+
+.tableau {
+
+    text-align: center; /** Centre le texte des tableau */
+    margin: auto;       /** Place le tableau au centre de l'écran */
+    width: 50%;
+    padding: 2px;
+}
+
+.bouton {
+    float: left;
+    margin:2px;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+.bouton2 a{
+    
+    float: left;
+    display: block;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background: url(/images/bouton-noir.png) no-repeat ;
+    color: white;
+    text-decoration: none;
+    margin:2px;
+    
+}
+
+.bouton a
+{
+    display: block;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background: url(/images/bouton-noir.png) no-repeat ;
+    color: white;
+    text-decoration: none;
+    margin:2px;
+}
+
+.bouton a:hover {
+    background: url(/images/bouton-noir-2.png) no-repeat;
+}
+
+.InfoActe {
+    display: block; /** Met en forme le cadre */
+    padding: 5px; /** Marge entre texte et les bordure */
+    font-size: 10pt;
+    text-align: center;
+    color: navy;
+    border: 1px dotted black;
+    float: right;
+
+}
+
+/**
+* Layout principale
+*/
+
+.search {
+    display: block;
+    padding: 2px;
+    text-align: center;
+}
+
+.content {
+    margin: auto;
+}
+
+#footer {
+    text-align: center;
+}
+
+.pagination {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.rechercheEdition {
+    text-align: center;
+
+}
+
+.TablesAnnDec {
+    text-align: center;
+
+}
+
+.identification {
+    text-align: center;
+}

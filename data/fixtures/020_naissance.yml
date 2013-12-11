@@ -1,0 +1,92 @@
+## YAML Template.
+
+Naissance:
+  Acte_naissance1:
+    numeroActe :                     1
+    numeroOrdre:                     1
+    typeActe   :                     naissance
+    dateActe :                       '2011-03-23'
+    heureActe :                      '14:08:40'
+
+  Acte_naissance2:
+    numeroActe :                     5
+    numeroOrdre:                     2
+    typeActe   :                     reconnaissance postérieure
+    dateActe :                       '2011-02-12'
+    heureActe :                      '10:08:40'
+
+
+
+Naissance_acteur:
+  declarant1_acte1:
+    naissance_id :                   1
+    estDeclarant:                    0
+    nom:                             Lorem
+    prenom :                         Ipsum
+    age:                             12
+    dateNaissance:                   '1989-02-01'
+    lieuNaissance:                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+    profession:                      Aldus PageMaker
+    domicile:                        consectetur adipisicing elit, sed do eiusmod tempor incididunt
+    typeActeur:                   père
+
+  declarant2_acte1:
+    naissance_id :                   1
+    estDeclarant:                    1
+    nom:                             Lorem
+    prenom :                         Bonorum
+    age:                             24
+    dateNaissance:                   '1988-05-07'
+    lieuNaissance:                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+    profession:                      Aldus PageMaker bis
+    domicile:                        consectetur adipisicing elit, sed do eiusmod tempor incididunt
+    typeActeur:                   mère
+
+  declarant1_acte2:
+    naissance_id :                   2
+    estDeclarant:                    0
+    nom:                             Bonduel
+    prenom :                         Lapin
+    age:                             48
+    dateNaissance:                   '1956-09-07'
+    lieuNaissance:                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+    profession:                      Aldus PageMaker bis
+    domicile:                        consectetur adipisicing elit, sed do eiusmod tempor incididunt
+    typeActeur:                   père
+
+  declarant2_acte2:
+    naissance_id :                   2
+    estDeclarant:                    1
+    nom:                             Bonduel
+    prenom :                         tortue
+    age:                             50
+    dateNaissance:                   '1956-09-07'
+    lieuNaissance:                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+    profession:                      Aldus PageMaker bis
+    domicile:                        consectetur adipisicing elit, sed do eiusmod tempor incididunt
+    typeActeur:                      autre préciser...
+    typeAutres:                      Frère de la mère
+
+Naissance_enfant:
+  enfant_acte1:
+    naissance_id :                   1
+    nom:                             Lorem
+    prenom :                         Malorum
+    sexe:                            masculin
+    dateNaissance:                   '2011-03-09'
+    heureNaissance:                  '22:30'
+    lieuNaissance:                   Donec tristique, lacus sit amet porta pellentesque
+    parentsMaries:                   1
+    dateMariageParents:              '2000-01-01'
+    lieuMariageParents:              Pellentesque diam erat, hendrerit nec convallis nec, aliquam eu purus.
+
+  enfant_acte2:
+    naissance_id :                   2
+    nom:                             Bonduel
+    prenom :                         Malorum
+    sexe:                            féminin
+    dateNaissance:                   '2011-03-09'
+    lieuNaissance:                   Donec tristique, lacus sit amet porta pellentesque
+    parentsMaries:                   1
+    dateMariageParents:              '2000-01-01'
+    lieuMariageParents:              Pellentesque diam erat, hendrerit nec convallis nec, aliquam eu purus.

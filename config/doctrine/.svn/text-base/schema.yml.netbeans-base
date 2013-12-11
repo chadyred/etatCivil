@@ -1,0 +1,189 @@
+# Schéma YAMEL des Tables de l'application Etat Civil
+
+#Table des mention marginale des naissances
+Mention_marginaleNaissance:
+  columns:
+    naissance_id:                    {type: integer}
+    mention:                         {type: string(4000), charset: utf8}
+    dateAjout:                       {type : date, notnull : true}
+  relations:
+    Naissance:
+      type: one
+      foreignType: many
+      local: naissance_id
+      foreign: id
+#Fin de la Table mention marginale des naissances
+
+# Tables des Actes de Naissance
+Naissance:
+  columns:
+    numeroActe :                     {type: integer}
+    numeroOrdre:                     {type: integer}
+    typeActe   :                     {type: enum, values: ['naissance','reconnaissance postérieure','reconnaissance antérieure','changement de nom'], default : naissance, notnull : true}
+    dateActe :                       {type : date, notnull : true}
+    heureActe :                      {type : time, notnull : true}
+    #mentionMarginale : {type: string(4000)}
+  relations:
+    Naissance_acteur:
+      type: many
+      foreignType: one
+      local: id
+      foreign: naissance_id
+    Naissance_enfant:
+      type: one
+      foreignType: one
+      local: id
+      foreign: naissance_id
+
+Naissance_acteur:
+  columns:
+    naissance_id :                   {type: integer, notnull : true}
+    nom:                             {type: string(45), notnull : true, charset: utf8}
+    prenom :                         {type: string(45), notnull : true, charset: utf8}
+    age:                             {type: integer}
+    dateNaissance:                   {type: date, notnull: true}
+    lieuNaissance:                   {type: string(4000), notnull : true, charset: utf8}
+    profession:                      {type: string(70), notnull : true, charset: utf8}
+    domicile:                        {type: string(4000), notnull : true, charset: utf8}
+    estDeclarant:                    {type: boolean, notnull: true, default: 0}
+    typeActeur:                      {type: enum, values: ['père','mère','autre préciser...'], default: père, notnull : true, charset: utf8}
+    typeAutres:                      {type: string(70), charset: utf8}
+ 
+
+Naissance_enfant:
+  columns:
+    naissance_id :                   {type: integer, notnull : true }
+    nom:                             {type: string(45), notnull : true, charset: utf8}
+    prenom :                         {type: string(45), notnull : true, charset: utf8}
+    sexe:                            {type: enum, values: ['masculin','féminin'], default: masculin, notnull : true, charset: utf8}
+    dateNaissance:                   {type: date, notnull: true}
+    heureNaissance:                  {type: time}
+    lieuNaissance:                   {type: string(4000), notnull : true, charset: utf8}
+    parentsMaries:                   {type: boolean, notnull : true, default: 1}
+    dateMariageParents:              {type: date}
+    lieuMariageParents:              {type: string(4000)}
+  #relations:
+   # Naissance:                       { type: many, class: Naissance, onDelete: CASCADE, local: naissance_id, foreign: id, foreignAlias: naissance}
+#Fin des tables des Actes de Naissance
+
+
+#Table des mention marginale des mariages
+Mention_marginaleMariage:
+  columns:
+    mariage_id:                      {type: integer}
+    mention:                         {type: string(4000), charset: utf8}
+    dateAjout:                       {type : date, notnull : true}
+  relations:
+    Mariage:
+      type: one
+      foreignType: many
+      local: mariage_id
+      foreign: id
+#Fin de la Table mention marginale des mariages
+
+#Table des Actes de Mariage
+Mariage:
+  columns:
+    numeroActe:                      {type: integer, notnull: true}
+    numeroOrdre:                     {type: integer, notnull: true}
+    dateActe :                       {type : date, notnull : true}
+    heureActe :                      {type : time, notnull : true}
+    dateReceptionContrat:            {type: date}
+    nomPrenomNotaire:                {type: string(90), charset: utf8}
+    adresseNotaire:                  {type: string(4000), charset: utf8}
+  relations:
+    Mariage_acteur:
+      type: many
+      foreignType: one
+      local: id
+      foreign: mariage_id
+    Mariage_contact:
+      type: one
+      foreignType: one
+      local: id
+      foreign: mariage_id
+
+
+Mariage_acteur:
+  columns:
+    mariage_id:                     {type: integer, notnull: true}
+    mariageNumeroActe:              {type: integer, notnull: true}
+    nom:                            {type: string(45), notnull: true, charset: utf8}
+    prenom:                         {type: string(45), notnull: true, charset: utf8}
+    typeActeur:                     {type: enum, values: ['époux','épouse'], default: époux, notnull: true, charset: utf8}
+    dateNaissance:                  {type: date, notnull: true}
+    lieuNaissance:                  {type: string(4000), notnull: true}
+    domicile:                       {type: string(4000), notnull: true, charset: utf8}
+    residence:                      {type: string(4000), notnull: true, charset: utf8}
+    profession:                     {type: string(70), notnull: true, charset: utf8}
+    etatAnterieurMariage:           {type: enum, values: ['célibataire','veuf(ve)','divorcé(e)'], default: célibataire, notnull: true, charset: utf8}
+    nomPrenomPrecConjoint:          {type: string(90), charset: utf8}
+  
+Mariage_contact:
+  columns:
+    mariage_id:                     {type: integer, notnull: true}
+    mariageNumeroActe:              {type: integer, notnull: true}
+    nom:                            {type: string(45), primary : true, notnull: true, charset: utf8}
+    prenom:                         {type: string(45), primary : true, notnull: true, charset: utf8}
+    typeContact:                    {type: enum, values: ['témoin','père','mère'], default: témoin, notnull: true, charset: utf8}
+    age:                            {type: integer}
+    domicile:                       {type: string(4000), notnull: true, charset: utf8 }
+    profession:                     {type: string(70), notnull: true, charset: utf8}
+ 
+  # Fin table des Mariage
+
+
+#Table des mention marginale des Deces
+Mention_marginaleDeces:
+  columns:
+    deces_id:                        {type: integer}
+    mention:                         {type: string(4000), charset: utf8}
+    dateAjout:                       {type : date, notnull : true}
+  relations:
+    Deces:
+      type: one
+      foreignType: many
+      local: deces_id
+      foreign: id
+#Fin de la Table mention marginale des Deces
+
+# Table des Actes de Décès
+Deces:
+  columns:
+    deces_id:                        {type: integer}
+    numeroActe :                     {type: integer, notnull: true}
+    numeroOrdre:                     {type: integer, notnull: true}
+    dateActe :                       {type : date, notnull : true}
+    heureActe :                      {type : time, notnull : true}
+    typeActe:                        {type: enum, values: ['décès','transcription'], default: deces, notnull: true, charset: utf8}
+    nomDefunt:                       {type: string(45), notnull: true, charset: utf8}
+    prenomDefunt:                    {type: string(45), notnull: true, charset: utf8}
+    dateDeces:                       {type: date, notnull: true}
+    heureDeces:                      {type: time, notnull: true}
+    dateApproximative:               {type: boolean, notnull: true, default: 0}
+    lieuDeces:                       {type: string(4000), notnull: true, charset: utf8}
+    professionDefunt:                {type: string(70), notnull: true, charset: utf8}
+    domicileDefunt:                  {type: string(4000), notnull: true, charset: utf8}
+    dateNaissanceDefunt:             {type: date, notnull: true}
+    lieuNaissanceDefunt:             {type: string(4000), notnull: true, charset: utf8}
+    nomPrenomPereDefunt:             {type: string(90), notnull: true, charset: utf8}
+    nomPrenomMereDefunt:             {type: string(90), notnull: true, charset: utf8}
+    statutMatrimoniale:              {type: enum, values: ['célibataire','marié(e)','veuf(ve)','divorcé(e)'], default: célibataire, notnull: true, charset: utf8}
+    nomDeclarant:                    {type: string(45), notnull: true, charset: utf8}
+    prenomDeclarant:                 {type: string(45), notnull: true, charset: utf8}
+    ageDeclarant:                    {type: integer, notnull: true}
+    professionDeclarant:             {type: string(70), notnull: true, charset: utf8}
+    adresseDeclarant:                {type: string(4000), notnull: true, charset: utf8}
+
+# Fin de la Table des Actes de Décès
+
+# Tables des utilisateurs
+Utilisateur:
+  columns:
+    Login:                          {type: string(20), notnull: true}
+    password:                       {type: string(20), notnull:true}
+    nom:                            {type: string(45), notnull: true, charset: utf8}
+    prenom:                         {type: string(45), notnull: true,charset: utf8}
+#fin de la Table utilisateur
+
+# Fin des tables
